@@ -99,7 +99,7 @@ svg.addEventListener("mousemove", e => {
     }
 
     let flower = new Flower(n, {
-      x: m.x,
+      x: m,
       y: m.y
     }, scale, svg);
     setTimeout(() => {

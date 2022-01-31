@@ -10,6 +10,10 @@
 </head>
 
 <body>
+  <audio controls loop autoplay="autoplay" id="music" style="opacity: 0.5; position: fixed; bottom: 0;left: 0;">
+    <source src="1.mp3" type="audio/mpeg">
+  </audio>
+
   <!-- partial:index.partial.html -->
   <div class="font">
     <p>想一直陪着林芷晴</p>
@@ -62,8 +66,16 @@
 
   </svg>
   <!-- partial -->
+  <script>
+    var music = document.querySelector("#music");
+    document.addEventListener("WeixinJSBridgeReady", function () {
+      music.play(); //音乐播放
+
+    }, false);
+  </script>
   <script src="./script.js"></script>
 
 </body>
+
 
 </html>
